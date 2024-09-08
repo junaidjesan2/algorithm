@@ -4,7 +4,7 @@ using namespace std;
 const int N = 1e5 + 5;
 vector<int> adj[N];
 bool vis[N];
-bool cycleFound = true;
+bool cycleFound;
 int parentArray[N];
 
 void bfs(int s)
@@ -57,7 +57,7 @@ int main()
     {
         cout << "Cycle Found" << endl;
     }
-    else if(cycleFound== false)
+    else if (cycleFound == false)
     {
         cout << "Cycle is not Found" << endl;
     }
