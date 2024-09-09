@@ -34,8 +34,8 @@ int main()
     {
         int a, b;
         cin >> a >> b;
-        // adj[a].push_back(b);
-        adj[b].push_back(a);
+        adj[a].push_back(b);
+        // adj[b].push_back(a);
     }
     memset(vis, false, sizeof(vis));
     memset(p, -1, sizeof(p));
