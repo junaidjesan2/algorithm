@@ -1,0 +1,2 @@
+
+    grid.resize(n);
