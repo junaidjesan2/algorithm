@@ -7,10 +7,10 @@ void dfs(int src)
 {
     vis[src] = true;
     cout << src << " ";
-    for (int c : adj_list[src])
+    for (int list : adj_list[src])
     {
-        if (vis[c] == false)
-            dfs(c);
+        if (!vis[list])
+            dfs(list);
     }
 }
 int main()
@@ -24,6 +24,7 @@ int main()
         adj_list[x].push_back(y);
         adj_list[y].push_back(x);
     }
+    memset(vis, false, sizeof(vis));
     dfs(0);
     return 0;
 }
